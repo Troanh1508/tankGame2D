@@ -7254,17 +7254,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &824057912 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5910638526221475566, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
-  m_PrefabInstance: {fileID: 2939216440627103866}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &837785071
 GameObject:
   m_ObjectHideFlags: 0
@@ -12831,8 +12820,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 519420031}
-  shootButton: {fileID: 824057912}
-  joystick: {fileID: 178678920}
+  moveJoystick: {fileID: 178678920}
+  aimJoystick: {fileID: 2939216440627103867}
   OnMoveBody:
     m_PersistentCalls:
       m_Calls:
@@ -13333,6 +13322,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+--- !u!114 &2939216440627103867 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7794899345580946737, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+  m_PrefabInstance: {fileID: 2939216440627103866}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4408714116800077322
 PrefabInstance:
   m_ObjectHideFlags: 0
