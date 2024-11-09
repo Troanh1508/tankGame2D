@@ -262,14 +262,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 7034341120423355572, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8696921136559308196, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -305,6 +297,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &60234663 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3783483356791413942, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+  m_PrefabInstance: {fileID: 60234658}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &60234664 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 698612493064101698, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+  m_PrefabInstance: {fileID: 60234658}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &203896361 stripped
@@ -15065,8 +15079,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 519420031}
+  shootButton: {fileID: 60234663}
   moveJoystick: {fileID: 1106333840}
   aimJoystick: {fileID: 60234662}
+  fixedAimJoystick: {fileID: 60234664}
   OnMoveBody:
     m_PersistentCalls:
       m_Calls:

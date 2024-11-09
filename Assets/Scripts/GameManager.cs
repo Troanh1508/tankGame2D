@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public static GameManager _instance;
 
     public bool loadFromMainMenu;
+    public bool autoShoot;
 
 
     public static GameManager Instance

@@ -130,6 +130,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 698589459341505895, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 698589459341505895, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 698589459341505895, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 698589459341505895, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 746853624597067798, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -272,6 +288,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7034341120423355572, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
   m_PrefabInstance: {fileID: 60234658}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &60234662 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3783483356791413942, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+  m_PrefabInstance: {fileID: 60234658}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &60234663 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 698612493064101698, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+  m_PrefabInstance: {fileID: 60234658}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &233799164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15030,8 +15068,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 519420031}
+  shootButton: {fileID: 60234662}
   moveJoystick: {fileID: 1106333840}
   aimJoystick: {fileID: 1069330495}
+  fixedAimJoystick: {fileID: 60234663}
   OnMoveBody:
     m_PersistentCalls:
       m_Calls:
