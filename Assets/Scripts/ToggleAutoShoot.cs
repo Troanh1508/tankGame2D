@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +9,15 @@ using UnityEngine.UI;
 public class ToggleAutoShoot : MonoBehaviour
 {
     public GameObject floatingAim, fixedAim, shootButton;
+
+    private void Start() {
+        if (PlayerPrefs.GetInt("autoShootMode") == 1) {
+            GetComponent<Toggle>().isOn = true;
+        }
+        if (PlayerPrefs.GetInt("autoShootMode") == 0) {
+            GetComponent<Toggle>().isOn = false;
+        }
+    }
 
     public void ToggleUI(bool toggleValue)
     {
@@ -17,6 +27,7 @@ public class ToggleAutoShoot : MonoBehaviour
             shootButton.SetActive(false);
             GameManager.Instance.autoShootMode = 1;
             PlayerPrefs.SetInt("autoShootMode", 1);
+            
         }
         else {
             floatingAim.SetActive(false);

@@ -187,7 +187,14 @@ public class GameManager : MonoBehaviour
         {
             LoadFromMainMenu();
 
-            if (GameObject.FindGameObjectWithTag("FloatingAimJoystick") != null)
+            
+        }
+        else
+        {
+            LoadNextLevel();
+        }
+
+        if (GameObject.FindGameObjectWithTag("FloatingAimJoystick") != null)
             floatingAimJoystick = GameObject.FindGameObjectWithTag("FloatingAimJoystick");
             if (GameObject.FindGameObjectWithTag("FixedAimJoystick") != null)
             fixedAimJoystick = GameObject.FindGameObjectWithTag("FixedAimJoystick");
@@ -213,11 +220,6 @@ public class GameManager : MonoBehaviour
                     fixedAimJoystick.SetActive(true);
                     floatingAimJoystick.SetActive(false);
             }
-        }
-        else
-        {
-            LoadNextLevel();
-        }
         
         
     }
