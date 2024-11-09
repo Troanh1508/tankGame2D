@@ -44,7 +44,7 @@ public class PlayerInput : MonoBehaviour
         {
             GetFixedTurretMovement();
         }
-        if (GameManager.Instance.autoShoot){
+        if (GameManager.Instance.autoShootMode == 1){
             GetComponentInChildren<TankController>().HandleShoot(); //Shoot as soon as ready
         }
         

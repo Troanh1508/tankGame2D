@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Buff
+  - ShootButton
+  - FixedAimJoystick
+  - FloatingAimJoystick
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,13 +15,16 @@ public class ToggleAutoShoot : MonoBehaviour
             floatingAim.SetActive(true);
             fixedAim.SetActive(false);
             shootButton.SetActive(false);
-            GameManager.Instance.autoShoot = true;
+            GameManager.Instance.autoShootMode = 1;
+            PlayerPrefs.SetInt("autoShootMode", 1);
         }
         else {
             floatingAim.SetActive(false);
             fixedAim.SetActive(true);
             shootButton.SetActive(true);
-            GameManager.Instance.autoShoot = false;
+            GameManager.Instance.autoShootMode = 0;
+            PlayerPrefs.SetInt("autoShootMode", 0);
+
         }
     }
 }

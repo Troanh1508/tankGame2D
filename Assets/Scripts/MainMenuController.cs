@@ -55,6 +55,7 @@ public class MainMenuController : MonoBehaviour
     {
         // Clear data
         GameManager.Instance.ClearSaveData();
+        GameManager.Instance.loadFromMainMenu = true;
         // Load the game scene
         SceneManager.LoadScene(1);
     }

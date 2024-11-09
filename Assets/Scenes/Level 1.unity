@@ -13151,6 +13151,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 698589459341505895, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 698589459341505895, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 698589459341505895, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 698589459341505895, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 746853624597067798, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -13243,6 +13259,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 2732550957467798552, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3929012264392098778, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
