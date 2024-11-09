@@ -7749,6 +7749,63 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4325787930607913065, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
   m_PrefabInstance: {fileID: 8227815371751087936}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1139898301
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2160551115812652660, guid: 724280413254dfc4daa48847371fe407, type: 3}
+      propertyPath: m_Name
+      value: VolumePreserver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790350091302703804, guid: 724280413254dfc4daa48847371fe407, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 533.9624
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790350091302703804, guid: 724280413254dfc4daa48847371fe407, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 342.2555
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790350091302703804, guid: 724280413254dfc4daa48847371fe407, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7574546
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790350091302703804, guid: 724280413254dfc4daa48847371fe407, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790350091302703804, guid: 724280413254dfc4daa48847371fe407, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790350091302703804, guid: 724280413254dfc4daa48847371fe407, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790350091302703804, guid: 724280413254dfc4daa48847371fe407, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790350091302703804, guid: 724280413254dfc4daa48847371fe407, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790350091302703804, guid: 724280413254dfc4daa48847371fe407, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790350091302703804, guid: 724280413254dfc4daa48847371fe407, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 724280413254dfc4daa48847371fe407, type: 3}
 --- !u!1 &1185789179
 GameObject:
   m_ObjectHideFlags: 0
@@ -13594,29 +13651,9 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 660586878325532711, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
-      propertyPath: OnReloading.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 660586878325532711, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
       propertyPath: OnReloading.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 837785073}
-    - target: {fileID: 660586878325532711, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
-      propertyPath: OnReloading.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 660586878325532711, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
-      propertyPath: OnReloading.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_value
-      objectReference: {fileID: 0}
-    - target: {fileID: 660586878325532711, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
-      propertyPath: OnReloading.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.UI.Slider, UnityEngine.UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 660586878325532711, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
-      propertyPath: OnReloading.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 4303401472057559614, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13690,3 +13727,4 @@ SceneRoots:
   - {fileID: 1075083669}
   - {fileID: 1521832898}
   - {fileID: 2017301174}
+  - {fileID: 1139898301}

@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     public bool loadFromMainMenu;
     public int autoShootMode;
+    public float sfxVolume, musicVolume;
 
     GameObject fixedAimJoystick, floatingAimJoystick, shootButton;
 
@@ -186,14 +187,16 @@ public class GameManager : MonoBehaviour
         if (loadFromMainMenu)
         {
             LoadFromMainMenu();
-
-            
         }
         else
         {
             LoadNextLevel();
         }
+        HandleAutoShoot();
+    }
 
+    private void HandleAutoShoot()
+    {
         if (GameObject.FindGameObjectWithTag("FloatingAimJoystick") != null)
             floatingAimJoystick = GameObject.FindGameObjectWithTag("FloatingAimJoystick");
             if (GameObject.FindGameObjectWithTag("FixedAimJoystick") != null)
@@ -220,12 +223,7 @@ public class GameManager : MonoBehaviour
                     fixedAimJoystick.SetActive(true);
                     floatingAimJoystick.SetActive(false);
             }
-        
-        
     }
-
-
-
 }
 
 [System.Serializable]
