@@ -81,7 +81,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 0}
-  toggleTransition: 1
+  toggleTransition: 0
   graphic: {fileID: 1659590930789219808}
   m_Group: {fileID: 0}
   onValueChanged:

@@ -1,7 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LevelSelect : MonoBehaviour
@@ -15,8 +19,11 @@ public class LevelSelect : MonoBehaviour
         {
             SaveData saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(saveLocation));
             for (int i = 0; i< levelButtons.Length; i++){
-                if (i + 1 > saveData.highestSceneIndex)
-                levelButtons[i].interactable = false;
+                int level = i+1;
+                levelButtons[i].GetComponentInChildren<TextMeshProUGUI>().SetText(level.ToString());
+                if (i + 1 > saveData.highestSceneIndex) {
+                    levelButtons[i].interactable = false;
+                }
             }
         }
         else {
@@ -24,6 +31,8 @@ public class LevelSelect : MonoBehaviour
                 levelButtons[i].interactable = false;
             }
         }
-        
+    }
+    public void LoadLevel(int levelIndex){
+        SceneManager.LoadScene(levelIndex);
     }
 }

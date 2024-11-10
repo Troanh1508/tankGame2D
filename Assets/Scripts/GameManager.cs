@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public static GameManager _instance;
 
     public bool loadFromMainMenu;
-    public int autoShootMode;
+    public int autoShootMode = 0;
 
     GameObject fixedAimJoystick, floatingAimJoystick, shootButton;
 
@@ -199,37 +199,6 @@ public class GameManager : MonoBehaviour
         {
             LoadNextLevel();
         }
-        HandleAutoShoot();
-    }
-
-    private void HandleAutoShoot()
-    {
-        if (GameObject.FindGameObjectWithTag("FloatingAimJoystick") != null)
-            floatingAimJoystick = GameObject.FindGameObjectWithTag("FloatingAimJoystick");
-            if (GameObject.FindGameObjectWithTag("FixedAimJoystick") != null)
-            fixedAimJoystick = GameObject.FindGameObjectWithTag("FixedAimJoystick");
-            if (GameObject.FindGameObjectWithTag("ShootButton") != null)
-            shootButton = GameObject.FindGameObjectWithTag("ShootButton");
-            
-            Debug.Log(floatingAimJoystick.GetInstanceID());
-            
-            if (PlayerPrefs.HasKey("autoShootMode")) {
-                autoShootMode = PlayerPrefs.GetInt("autoShootMode");
-            }
-            else {
-                PlayerPrefs.SetInt("autoShootMode", 0);
-                autoShootMode = 0; // Mặc định là bấm nút để bắn đạn
-            }
-            if (autoShootMode == 1) {
-                    shootButton.SetActive(false);
-                    fixedAimJoystick.SetActive(false);
-                    floatingAimJoystick.SetActive(true);
-                }
-            else {
-                    shootButton.SetActive(true);
-                    fixedAimJoystick.SetActive(true);
-                    floatingAimJoystick.SetActive(false);
-            }
     }
 }
 

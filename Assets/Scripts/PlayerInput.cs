@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -23,6 +24,17 @@ public class PlayerInput : MonoBehaviour
             // Add a listener to the button
             shootButton.onClick.AddListener(OnButtonClick);
         }
+        if (GameManager.Instance.autoShootMode == 1) {
+            aimJoystick.gameObject.SetActive(true);
+            fixedAimJoystick.gameObject.SetActive(false);
+            shootButton.gameObject.SetActive(false);
+        }
+        if (GameManager.Instance.autoShootMode != 1) {
+            aimJoystick.gameObject.SetActive(false);
+            fixedAimJoystick.gameObject.SetActive(true);
+            shootButton.gameObject.SetActive(true);
+        }
+
     }
     private void Awake() {
         if (mainCamera == null)
