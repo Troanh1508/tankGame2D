@@ -101,6 +101,8 @@ public class GameManager : MonoBehaviour
                     Destroy(buff);
                 }
             }
+            GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<TankMover>().movementData.ResetValues();
+            GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Turret>().turretData.ResetValues();
 
             Debug.Log("Game loaded.");
         }
@@ -118,6 +120,8 @@ public class GameManager : MonoBehaviour
         }
         else
         Debug.Log("No save data found");
+        GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<TankMover>().movementData.ResetValues();
+        GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Turret>().turretData.ResetValues();
     }
 
     public List<string> CheckActiveEnemies()
