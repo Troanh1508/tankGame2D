@@ -20,8 +20,6 @@ public class MainMenuController : MonoBehaviour
         {
             newGameButton.onClick.AddListener(OnStartGameClicked);
         }
-        else
-        Debug.Log("No save data found");
 
         saveLocation = Path.Combine(Application.persistentDataPath, "tankGameData.json");
 

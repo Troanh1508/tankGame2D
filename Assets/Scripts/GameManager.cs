@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
 
     public bool loadFromMainMenu;
     public int autoShootMode;
-    public float sfxVolume, musicVolume;
 
     GameObject fixedAimJoystick, floatingAimJoystick, shootButton;
 
