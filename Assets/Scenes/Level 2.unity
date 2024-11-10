@@ -262,6 +262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7034341120423355572, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -278,11 +282,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &60234660 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3938942913796243126, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
-  m_PrefabInstance: {fileID: 60234658}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &60234661 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7034341120423355572, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
@@ -15092,6 +15091,14 @@ PrefabInstance:
       propertyPath: finishPanel
       value: 
       objectReference: {fileID: 60234661}
+    - target: {fileID: 3366646932551674728, guid: b2ec1481efe944f4c8a70052af66e08f, type: 3}
+      propertyPath: beatTheGamePanel
+      value: 
+      objectReference: {fileID: 5658599238380965220, guid: bc12b2fa2dd8761429cc71d9b8e0e5a3, type: 3}
+    - target: {fileID: 3366646932551674728, guid: b2ec1481efe944f4c8a70052af66e08f, type: 3}
+      propertyPath: beatTheGameCanvas
+      value: 
+      objectReference: {fileID: 5658599238380965220, guid: bc12b2fa2dd8761429cc71d9b8e0e5a3, type: 3}
     - target: {fileID: 4920697480232890006, guid: b2ec1481efe944f4c8a70052af66e08f, type: 3}
       propertyPath: m_Name
       value: Exit
@@ -15287,7 +15294,7 @@ PrefabInstance:
     - target: {fileID: 397109420345234654, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
       propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
-      objectReference: {fileID: 60234660}
+      objectReference: {fileID: 0}
     - target: {fileID: 397109420345234654, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
       propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 

@@ -6,14 +6,23 @@ using UnityEngine.SceneManagement;
 public class ExitLevel : MonoBehaviour
 {
     
-    public GameObject finishPanel;
+    public GameObject finishPanel,beatTheGameCanvas;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            finishPanel.SetActive(true);
-            Time.timeScale = 0f;
+            if ( SceneManager.GetActiveScene().buildIndex + 1 == SceneManager.sceneCountInBuildSettings)
+            {
+                Debug.Log("You completed the game");
+                Time.timeScale = 0f;
+                Instantiate(beatTheGameCanvas);
+            }
+            else {
+                finishPanel.SetActive(true);
+                Time.timeScale = 0f;
+            }
+            
         }
     }
 }

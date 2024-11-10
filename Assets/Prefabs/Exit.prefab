@@ -143,3 +143,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b85fdcb9f87d2b48a69fa284d07f4af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finishPanel: {fileID: 0}
+  beatTheGamePanel: {fileID: 8225898994542468509, guid: 4159e5e45de2fbe4aaf769dd753cc2ba, type: 3}

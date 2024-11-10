@@ -12770,6 +12770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishPanel: {fileID: 1551587887}
+  beatTheGameCanvas: {fileID: 5658599238380965220, guid: bc12b2fa2dd8761429cc71d9b8e0e5a3, type: 3}
 --- !u!61 &1674155996
 BoxCollider2D:
   m_ObjectHideFlags: 0
