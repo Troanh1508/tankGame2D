@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
         return;
 
         resetPlayerStats();
+        SaveGame();
     }
 
     private void resetPlayerStats()

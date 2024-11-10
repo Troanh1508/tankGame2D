@@ -12,7 +12,6 @@ public class ExitLevel : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            GameManager.Instance.SaveGame();
             finishPanel.SetActive(true);
             Time.timeScale = 0f;
         }
