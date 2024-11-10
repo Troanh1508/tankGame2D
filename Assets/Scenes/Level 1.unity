@@ -122,11 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &5826159 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3938942913796243126, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
-  m_PrefabInstance: {fileID: 2939216440627103866}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &92556455 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4820650639154575502, guid: 52895edaec5555845b18d53dd61fd21a, type: 3}
@@ -13370,7 +13365,7 @@ PrefabInstance:
     - target: {fileID: 397109420345234654, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
       propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
-      objectReference: {fileID: 5826159}
+      objectReference: {fileID: 0}
     - target: {fileID: 397109420345234654, guid: b15b7eb6074f38542af15072d632eab5, type: 3}
       propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 

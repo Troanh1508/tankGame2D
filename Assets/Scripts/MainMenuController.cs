@@ -53,14 +53,12 @@ public class MainMenuController : MonoBehaviour
     {
         // Clear data
         GameManager.Instance.ClearSaveData();
-        GameManager.Instance.loadFromMainMenu = true;
         // Load the game scene
         SceneManager.LoadScene(1);
     }
 
     private void OnLoadGameClicked()
     {
-        GameManager.Instance.loadFromMainMenu = true;
         if (File.Exists(saveLocation))
         {
             SaveData saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(saveLocation));

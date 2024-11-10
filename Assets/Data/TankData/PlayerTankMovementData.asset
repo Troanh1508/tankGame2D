@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerTankMovementData
   m_EditorClassIdentifier: 
   speed: 1.5
-  rotationSpeed: 250
+  rotationSpeed: 300

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4f61faf21c8ed409872dc0a8864f2e, type: 3}
   m_Name: EnemyTankMovementData
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 1
   rotationSpeed: 200

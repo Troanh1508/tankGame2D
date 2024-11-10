@@ -37,19 +37,13 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
-    public void Save(){
-        GameManager.Instance.SaveGame();
-    }
-
     public void ReplayLevel(){
-        GameManager.Instance.loadFromMainMenu = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
 
     public void GoToNextLevel(){
         GameManager.Instance.SaveGame();
-        GameManager.Instance.loadFromMainMenu = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Time.timeScale = 1f;
         isPaused = false;
