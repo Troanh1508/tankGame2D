@@ -44,19 +44,27 @@ public class GameManager : MonoBehaviour
         Debug.Log("Save Location: " + saveLocation);
     }
     public void SaveGame(){
+        
         if (GameObject.FindGameObjectWithTag("Player"))
         {
-                SaveData saveData = new()
+                SaveData newSaveData = new()
             {
                 playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position,
                 playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Damagable>().Health,
                 // playerSpeed = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<TankMover>().movementData.speed,
                 ActiveEnemyNames = CheckActiveEnemies(),
                 ActiveBuffNames = CheckActiveBuffs(),
-                currentSceneIndex = SceneManager.GetActiveScene().buildIndex // Save the current scene index
-
+                currentSceneIndex = SceneManager.GetActiveScene().buildIndex, // Save the current scene index
+                highestSceneIndex = SceneManager.GetActiveScene().buildIndex
             };
-            File.WriteAllText(saveLocation, JsonUtility.ToJson(saveData));
+            if (File.Exists(saveLocation)) {
+                SaveData oldSaveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(saveLocation));
+                // Check if player has unlocked a higher level
+                if (oldSaveData.highestSceneIndex >= newSaveData.highestSceneIndex){
+                    newSaveData.highestSceneIndex = oldSaveData.highestSceneIndex;
+                }
+            }
+            File.WriteAllText(saveLocation, JsonUtility.ToJson(newSaveData));
             Debug.Log("Game saved at " + saveLocation);
         }
         else
@@ -233,4 +241,5 @@ public class SaveData
     public List<String> ActiveEnemyNames;
     public List<String> ActiveBuffNames;
     public int currentSceneIndex;
+    public int highestSceneIndex;
 }

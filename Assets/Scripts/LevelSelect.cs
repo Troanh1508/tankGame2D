@@ -10,18 +10,20 @@ public class LevelSelect : MonoBehaviour
     private string saveLocation;
     void Start()
     {
-        int currentLevel = 1;
         saveLocation = Path.Combine(Application.persistentDataPath, "tankGameData.json");
         if (File.Exists(saveLocation))
         {
             SaveData saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(saveLocation));
-            currentLevel = saveData.currentSceneIndex;
             for (int i = 0; i< levelButtons.Length; i++){
-                if (i + 1 > currentLevel)
+                if (i + 1 > saveData.highestSceneIndex)
                 levelButtons[i].interactable = false;
             }
         }
-        else
-        Debug.Log("No save data found");
+        else {
+            for (int i = 1; i< levelButtons.Length; i++){
+                levelButtons[i].interactable = false;
+            }
+        }
+        
     }
 }
